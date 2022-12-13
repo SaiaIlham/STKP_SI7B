@@ -10,4 +10,5 @@ for suffix in range (1,5000):
 
 
 end = time.time()
+print("Hasil", jumlah)
 print(end-start)

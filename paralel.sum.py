@@ -24,10 +24,16 @@ hitung2=jumlah(50001, 10000)
 
 #menjalankan thread
 hitung1.start()
-hitung2.hasil()
+hitung2.start()
 
 #menampilkan hasil thread
-hitung1.hasil()
+hitung1Hasil() = hitung1.hasilHitung()
+hitung2Hasil() = hitung2.hasilHitung()
+
 
 end = time.time()
+
+totalHitung = hitung1Hasil + hitung2Hasil
+print(hitung1Hasil, "+", hitung2Hasil, "=", totalHitung)
+
 print(end-start)
